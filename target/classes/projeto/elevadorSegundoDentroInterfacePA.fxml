@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.SegundoController3">
+   <children>
+      <JFXTextArea editable="false" focusColor="#93d5f5" layoutX="55.0" layoutY="38.0" prefHeight="102.0" prefWidth="147.0" text="Elevador" unFocusColor="#93d5f5">
+         <font>
+            <Font name="Gill Sans MT" size="38.0" />
+         </font>
+      </JFXTextArea>
+      <JFXButton fx:id="voltarButton" buttonType="RAISED" layoutX="35.0" layoutY="527.0" onAction="#voltarButtonClick" prefHeight="51.0" prefWidth="172.0" style="-fx-background-color: #93D5F5;" text="retornar ao início">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="infoButton" buttonType="RAISED" layoutX="837.0" layoutY="72.0" onAction="#infoButtonClick" prefHeight="51.0" prefWidth="136.0" style="-fx-background-color: #93D5F5;" text="informações">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXTextArea fx:id="statusTextArea" editable="false" focusColor="#405aa800" layoutX="107.0" layoutY="153.0" prefHeight="57.0" prefWidth="806.0" text="Você está no 2° Andar. Clique para sair do elevador ou escolha outro andar." unFocusColor="#4d4d4d00">
+         <font>
+            <Font name="Gill Sans MT" size="21.0" />
+         </font>
+      </JFXTextArea>
+      <ImageView fx:id="portaImageView" fitHeight="316.0" fitWidth="250.0" layoutX="389.0" layoutY="214.0" onMouseClicked="#portaImageViewClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/elevadorDentroPA.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="thirdFloorButton" buttonType="RAISED" layoutX="688.0" layoutY="327.0" onAction="#thirdFloorButtonClick" ripplerFill="#6f0000" style="-fx-background-color: #6f0000;" text="3°" textFill="WHITE" />
+      <JFXButton fx:id="secondFloorButton" buttonType="RAISED" layoutX="688.0" layoutY="365.0" onAction="#secondFloorButtonClick" ripplerFill="#6f0000" style="-fx-background-color: #6f0000;" text="2°" textFill="WHITE" />
+      <JFXButton fx:id="firstFloorButton" buttonType="RAISED" layoutX="688.0" layoutY="403.0" onAction="#firstFloorButtonClick" ripplerFill="#6f0000" style="-fx-background-color: #6f0000;" text="1°" textFill="WHITE" />
+      <JFXButton fx:id="groundFloorButton" buttonType="RAISED" layoutX="690.0" layoutY="442.0" onAction="#groundFloorButtonClick" ripplerFill="#6f0000" style="-fx-background-color: #6f0000;" text="T" textFill="WHITE" />
+   </children>
+</AnchorPane>

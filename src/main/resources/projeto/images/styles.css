@@ -1,0 +1,4 @@
+.root {
+    -fx-background-image: url("C:\Users\Isabel Buosi\eclipse-workspace\a320241calvetti\resourses\background.jpg");
+    -fx-background-size: cover; /* Ajusta a imagem para cobrir todo o AnchorPane */
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.DocesController">
+   <children>
+      <JFXTextArea editable="false" focusColor="#93d5f5" layoutX="45.0" layoutY="28.0" prefHeight="102.0" prefWidth="299.0" text="Máquina de Doces" unFocusColor="#93d5f5">
+         <font>
+            <Font name="Gill Sans MT" size="38.0" />
+         </font>
+      </JFXTextArea>
+      <JFXButton fx:id="infoButton" buttonType="RAISED" layoutX="827.0" layoutY="62.0" onAction="#infoButtonClick" prefHeight="51.0" prefWidth="136.0" style="-fx-background-color: #93D5F5;" text="informações">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="voltarButton" buttonType="RAISED" layoutX="25.0" layoutY="517.0" onAction="#voltarButtonClick" prefHeight="51.0" prefWidth="172.0" style="-fx-background-color: #93D5F5;" text="retornar ao início">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXTextArea editable="false" focusColor="#405aa800" layoutX="277.0" layoutY="163.0" prefHeight="39.0" prefWidth="472.0" text="Bem Vindo! Clique no doce que você deseja comprar:" unFocusColor="#4d4d4d00">
+         <font>
+            <Font name="Gill Sans MT" size="21.0" />
+         </font>
+      </JFXTextArea>
+      <ImageView fx:id="kitkatImageView" fitHeight="150.0" fitWidth="200.0" layoutX="85.0" layoutY="267.0" onMouseClicked="#kitkatClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/kitkat.png" />
+         </image></ImageView>
+      <ImageView fx:id="talentoImageView" fitHeight="150.0" fitWidth="200.0" layoutX="416.0" layoutY="250.0" onMouseClicked="#talentoClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/talento.png" />
+         </image></ImageView>
+      <ImageView fx:id="milkaImageView" fitHeight="150.0" fitWidth="200.0" layoutX="682.0" layoutY="285.0" onMouseClicked="#milkaClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/milkacookie.png" />
+         </image></ImageView>
+      <JFXTextArea editable="false" focusColor="#405aa800" layoutX="148.0" layoutY="423.0" prefHeight="29.0" prefWidth="75.0" text="R$: 6.00" unFocusColor="#4d4d4d00">
+         <font>
+            <Font name="Gill Sans MT" size="21.0" />
+         </font>
+      </JFXTextArea>
+      <JFXTextArea editable="false" focusColor="#405aa800" layoutX="464.0" layoutY="424.0" prefHeight="29.0" prefWidth="75.0" text="R$: 7.00" unFocusColor="#4d4d4d00">
+         <font>
+            <Font name="Gill Sans MT" size="21.0" />
+         </font>
+      </JFXTextArea>
+      <JFXTextArea editable="false" focusColor="#405aa800" layoutX="755.0" layoutY="423.0" prefHeight="29.0" prefWidth="75.0" text="R$: 8.00" unFocusColor="#4d4d4d00">
+         <font>
+            <Font name="Gill Sans MT" size="21.0" />
+         </font>
+      </JFXTextArea>
+   </children>
+</AnchorPane>
